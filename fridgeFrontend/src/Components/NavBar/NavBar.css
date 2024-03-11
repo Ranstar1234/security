@@ -1,0 +1,202 @@
+.menu{
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    padding: 20px 0 0 0;  
+    font-size: 16px;
+}
+/* nav bar border set up*/
+.menu li{
+   list-style:none;
+    border-left: 2px solid #3ca0e7;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-family: arvo;
+    display: inline-block;
+    padding: 0 30px;
+    margin: 0 auto;
+ }
+nav li a {
+    color:black;
+  }
+nav li a:hover {
+    color: #3ca0e7;
+  }
+nav li:hover {
+    cursor: pointer;
+  }
+/* dropdown hidden first */
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    background: white;
+    border:none;
+  }
+/* dropdown appear */
+nav ul li:hover > ul, 
+nav ul li ul:hover {
+    opacity: 1;
+    visibility: visible;
+    display:block;
+    min-width: 250px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+}
+/* dropdown */
+ .menu li ul li {
+  clear: both;
+  text-align: left;
+  margin-bottom: 20px;
+  border:none;
+}
+/* dropdown content animation */
+nav ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 2px solid #3ca0e7;
+    transition: all 0.3s ease;
+  }
+nav ul li ul li a { 
+  transition: all 0.5s ease; 
+  
+}
+
+  /* get rid of underline in link */
+.link{
+  color: white;
+  text-decoration: none;
+  padding: 2%;
+}
+
+ /* font import needed*/
+@font-face {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/arvo/v20/tDbD2oWUg0MKqScQ7Z7o_vo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  } 
+ 
+/* add Item button */
+/* right top add item bnt */
+.additemicon{ 
+  position:inline-block;
+  width: 100px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: black;
+  height: 30px;
+  left: 10%;
+  background-color: #2bc6ff;
+}
+.noborder{ /* no border for add item bnt*/
+    border:red;
+}
+.additemicon:hover{
+  color: white;
+}
+/* food-form */
+.food-form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.form-box{
+  margin-top: 7vh;
+  opacity: 80%;
+  background-color: blueviolet;
+  padding-right: 80px;
+  padding-left: 80px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+/* food form text */
+.additem-text{
+  width: 100%;
+  color: white;
+  border-bottom: 2px splid white;
+  line-height: 30px;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+}
+label{
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+/* additem-box */
+.additem-box{
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border-radius: 20px;
+  padding: 2px;
+  padding-left: 20px;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin:5px;
+  font-size: 11pt;
+  background:transparent;
+  transition: 1s;
+  outline: none;
+  position:relative;
+}
+/* additem button */
+.additem-btn{
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(48, 172, 251);
+  color: white;
+  margin-top: 5px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15pt;
+  font-weight: 700;
+  transition: 1s;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.additem-btn:hover{
+  transform: scale(1.03);
+  letter-spacing: 4px;
+  background-color: #7FFFD4;
+  color: #1e90ff;
+}
+/* form animation */
+.show{
+  display: block;
+  transition: 600ms;
+  opacity: 1;
+  visibility: visible;
+  position:absolute;
+}
+.show.active{
+  transform: translateY(100 px) scale(0) rotateY(170 edge);
+}
+/* disable form */
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
