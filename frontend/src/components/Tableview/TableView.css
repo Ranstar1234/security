@@ -1,0 +1,53 @@
+table.darkTable {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #1C2128;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.darkTable td, table.darkTable th {
+    border: 1px solid #545A60;
+    padding: 10px 4px;
+}
+table.darkTable tbody td {
+    font-size: 13px;
+    color: #ADBAC7;
+}
+table.darkTable thead {
+    background: #2D333B;
+}
+table.darkTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ADBAC7;
+    text-align: center;
+    border-left: 2px solid #4A4A4A;
+}
+
+table.darkTable tfoot td {
+    font-size: 12px;
+}
+
+.delete-btn, .view-btn, .edit-btn{
+    border-radius: 6px;
+    color: #e5534b;
+    background-color: #373e47;
+}
+
+.delete-btn:hover {
+    color: #fff;
+    background-color: #e5534b;
+    border-color: #e5534b;
+}
+
+.view-btn:hover {
+    color: #fff;
+    background-color: darkseagreen;
+    border-color: darkseagreen;
+}
+
+.edit-btn:hover {
+    color: #000;
+    background-color: lightyellow;
+    border-color: lightyellow;
+}

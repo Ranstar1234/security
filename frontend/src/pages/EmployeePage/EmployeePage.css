@@ -1,0 +1,8 @@
+.employee-display-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.action-button-wrapper {
+    margin-top: 20px;
+}
